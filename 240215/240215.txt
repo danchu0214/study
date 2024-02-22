@@ -1,0 +1,22 @@
+git branch [name]  _브렌치 생성
+git branch –list _브렌치 리스트 확인
+git switch dev1 _dev1로 이동
+
+dev로 이동 후 커밋하지 않고 다시 main으로 돌아가게 되면 dev내용도 보여지게 됨.
+
+git switch main  _main으로 돌아감
+git switch -  _이전 브렌치로 돌아감
+git merge [branch명] 브렌치 합체 (현제 위치한 곳에 합체됨)
+git branch -d [sub]   _할일 끝냈을 때 삭제
+git branch -D [sub]  _강제 삭제
+
+~merge 후 충돌이 일어난 경우~
+:wq <입력
+
+
+
+github연결 
+git remote add origin https://github.com/별명/파일명.git
+
+github에 올리기
+git push -u origin main

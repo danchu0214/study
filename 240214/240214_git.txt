@@ -1,0 +1,18 @@
+Unix 명령어
+mkdir [name] -디렉토리 생성
+cd [name] -디렉토리로 이동
+touch [name] -파일생성
+cd [name] -디렉토리 변경
+
+
+git 사용
+git init -main 등록
+git config --global user.name/email “해당정보” -사용자 정보 등록
+git config --list -사용자 정보 확인
+git add 파일명  생성/변경 후 저장
+git add .  변경내용 모두 저장
+git commit -m “[name]” 메시지 작성 후 커밋
+git commit -am “[name]” add와 커밋을 동시에
+git status 상태 확인
+git log 커밋 이력 확인
+git log --oneline 커밋 이력 확인
