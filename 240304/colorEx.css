@@ -1,0 +1,23 @@
+@charset "utf-8";
+body {
+  background-color: burlywood;
+}
+
+h2 {
+  background-color: aliceblue;
+}
+#box1 {
+  color: tomato;
+}
+
+#box2 {
+  color: violet;
+}
+
+#box3 {
+  color: teal;
+}
+
+#box4 {
+  color: aquamarine;
+}
