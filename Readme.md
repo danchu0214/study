@@ -31,3 +31,6 @@ html opengraph, meta 학습
 
 ## 240304 학습내용
 css 학습
+
+## 240305 학습내용
+css font, text(overflow, shadow,align) 학습

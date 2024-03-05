@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>text-shadow</title>
+  <style>
+    body {
+      font-family: '나눔고딕', '맑은 고딕', 돋움, sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .title1 {
+      text-shadow: 10px 10px 10px #999; /* x축 y축 번짐 색상 */
+    }
+    .title2 {
+      text-shadow: -10px -10px 5px palegreen;
+    }
+    .title3 {
+      text-shadow: 0 10px 0 salmon;/* x축 y축 번짐 색상 */
+      font-size: 20px;
+    }
+    .title4 {
+      text-shadow: 0 10px indigo;/* x축 y축 색상 */
+    }
+    .title5 {
+      color: bisque;
+      text-shadow: 0 10px;/* x축 y축. 번짐 생략. 색상 생략시 글자 색을 따라감 */
+    }
+    .title6 {
+      text-shadow:
+       0 0 10px lightblue,
+       10px 10px 10px maroon,
+       -10px -10px 10px rosybrown,
+       0 0 10px thistle
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="title1">text-shadow 서체 그림자</h2>
+  <h2 class="title2">text-shadow 서체 그림자</h2>
+  <h2 class="title3">text-shadow 서체 그림자</h2>
+  <h2 class="title4">text-shadow 서체 그림자</h2>
+  <h2 class="title5">text-shadow 서체 그림자</h2>
+  <h2 class="title6">text-shadow 서체 그림자</h2>
+</body>
+</html>
