@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+body {
+  font-family: '카페24 써라운드', '휴먼아미체', '바탕', serif;
+  font-size: 26px;
+  color: #857396;
+  text-align: center;/* 인라인 요소의 중앙 정렬*/
+}
+form > fieldset{/* 자식 선택자*/
+  background-color: #FAF3F0;
+}
+
+legend {
+  background-color: #849484;
+  color: #FFCACC;
+  font-size: 25px;
+  text-align: left;
+}
+
+form> fieldset > input[id="userName"] {
+  font-size: 20px;
+}
+form > fieldset > input[type="text"]::placeholder {
+  color: #FF6000;
+}
+
+/* 
+  요소[속성="값"]
+  속성 선택자: input 요소들 중에 type의 값이 submit인 선택자
+*/
+
+form > fieldset> button[type="submit"] {
+  font-family: '카페24 써라운드', '휴먼아미체', '바탕', serif;
+  font-size: 20px;
+  color: #cea4a5;
+  background-color: #E4E4D0;
+  cursor: pointer; /*마우스 커서 모양 변경*/
+}
+
+form > fieldset > button:hover {
+  background-color: #5F6F52;
+  color: #E4E4D0;
+}
+
+/* :checked 체크박스나 라디오버튼에 체크가 되면을 의미 */
+form > fieldset > input[type=checkbox]:checked ~ label {
+  background-color: orange;
+  /* appearance: none; form과 관련된 요소들의 기본 스타일 값 제어*/
+}
+/* 
+  인접 형제 선택자 :
+   선택자 + 선택자
+   기준 요소 바로 뒤에 오는 형제 관계 선택자 단 하나만 
+*/
+
+section > fieldset {
+  background-color: #FAF3F0;
+}

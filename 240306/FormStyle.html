@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>formStyle</title>
+  <link rel="stylesheet" href="./FormStyle.css">
+  <!-- form 관련 요소들은 기본 스타일이 존재하기 때문에 직접 적용 -->
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>form event</legend>
+      <label for="userName"></label>
+       <input type="text" name="이름을 작성하세요" id="userName" placeholder="이름을 작성하세요">
+       <button type="submit">전송</button>
+    </fieldset>
+
+    <section>
+      <fieldset>
+        <legend>:checked</legend>
+        <input type="checkbox" name="check" id="check" value="체크1">
+        <label for="check">체크1</label>
+        <label>체크2</label>
+        <label>체크3</label>
+      </fieldset>
+    </section>
+  </form>
+</body>
+</html>
