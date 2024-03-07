@@ -37,3 +37,6 @@ css font, text(overflow, shadow,align) 학습
 
 ## 240306 학습내용
 css 의사 클래스,요소/ width, height 학습
+
+## 240307 학습내용
+border, vertical-align, margin, padding, 중앙정렬 학습
