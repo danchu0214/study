@@ -40,3 +40,6 @@ css 의사 클래스,요소/ width, height 학습
 
 ## 240307 학습내용
 border, vertical-align, margin, padding, 중앙정렬 학습
+
+## 240308 학습내용
+margin, padding, border, 요소 실제 크기
