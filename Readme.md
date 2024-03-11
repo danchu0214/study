@@ -43,3 +43,6 @@ border, vertical-align, margin, padding, 중앙정렬 학습
 
 ## 240308 학습내용
 margin, padding, border, 요소 실제 크기
+
+## 240311 학습내용
+overflow
