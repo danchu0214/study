@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>flexEx3</title>
+  <style>
+    body {
+      margin: 0;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    header {
+      background-color: #80BCBD;
+      height: 10vh;
+    }
+    .box {
+      height: 4vh;
+      background-color: #F9F7C9
+    }
+    .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      height: 86vh;
+    }
+    aside {
+      background-color: #AAD9BB;
+      width: 35%;
+    }
+    section {
+      background-color: #D5F0C1;
+      width: 65%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>header</div>
+  </header>
+  <div class="box">
+    <nav>nav</nav>
+  </div>
+  <div class="wrapper">
+    <aside>aside</aside>
+    <section>section</section>
+  </div>
+</body>
+</html>

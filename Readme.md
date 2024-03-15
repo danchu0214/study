@@ -55,3 +55,6 @@ tablestyle, formstyle
 
 ## 240314 학습내용
 em, rem, flex, viewport단위
+
+## 240315 학습내용
+flex(align, jusrify, gap, flow)

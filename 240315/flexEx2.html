@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>flexEx2</title>
+  <style>
+    body {
+      margin: 50px;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .box {
+      border: 2px solid #000;
+      width: 60vw;
+      margin: auto;
+
+      display: flex;
+      height: 60vh;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    ul {
+      list-style: none;
+    }
+    .box .item {
+      display: flex;
+      width: 50%;
+      height: 10vh;
+      justify-content: center;
+      align-items: center;
+    }
+    .box .item1 {background-color: #937DC2;}
+    .box .item2 {background-color: #C689C6;}
+    .box .item3 {background-color: #FFABE1;}
+    .box .item4 {background-color: #FFE6F7;}
+    .box .item5 {background-color: #BA90C6;}
+  </style>
+</head>
+
+<body>
+  <ul class="box">
+    <li class="item item1">item1<br>item</li>
+    <li class="item item2">item2<br>item</li>
+    <li class="item item3">item3<br>item</li>
+    <li class="item item4">item4<br>item</li>
+    <li class="item item5">item5<br>item</li>
+  </ul>
+</body>
+</html>

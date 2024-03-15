@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>filexEx4</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    /* .wrapper {
+      display: flex;
+      align-items: flex-end;
+      height: 100vh;
+    }
+    .wrapper footer {
+      background-color: #FAF1E4;
+       width: 1400px; 1400/1900*100 
+      width: 73.684vw;
+      margin: 0 auto;
+      padding: 1vw 2vw;
+      box-sizing: border-box; width기준(border+padding) 
+    } */
+    .wrapper footer h2 {
+      margin: 0;
+    }
+
+    .wrapper {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    .wrapper footer {
+      background-color: #FAF1E4;
+      width: 73.684vw;
+      /* margin: 0 auto; */
+      padding: 1vw 2vw;
+      box-sizing: border-box;
+
+      /* align-self: flex-end; 플렉스 아이템에 직접 적용 */
+
+      /* 플렉스 아이템에 직접 적용
+        margin을 통해 개별적으로 위치지정 가능. 더 섬세하게 조정 가능
+      */
+      /* margin: auto; center center */
+      /* margin-left: auto;여백이 왼쪽으로 들어가기 때문에 아이템은 오른쪽 배치 */
+      /* margin-right: auto; 여백이 오른쪽으로 들어가기 때문에 아이템은 왼쪽 배치 */
+      /* margin-bottom: auto; 여백이 아래쪽으로 들어가기 때문에 아이템은 위쪽 배치 */
+      /* margin-top: auto; 여백이 위쪽으로 들어가기 때문에 아이템은 아래쪽 배치 */
+
+      margin: 5rem auto 2rem;
+      margin: auto auto 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper"><!-- flex-container -->
+    <footer><!-- flex-item -->
+      <h2>footer</h2>
+      <p>헌법개정안은 국회가 의결한 후 30일 이내에 국민투표에 붙여 국회의원선거권자 과반수의 투표와 투표자 과반수의 찬성을 얻어야 한다. 대통령의 임기가 만료되는 때에는 임기만료 70일 내지 40일전에 후임자를 선거한다. 국가는 여자의 복지와 권익의 향상을 위하여 노력하여야 한다. 의무교육은 무상으로 한다.</p>
+    </footer>
+  </div>
+</body>
+</html>
