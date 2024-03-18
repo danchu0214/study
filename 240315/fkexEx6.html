@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>flexEx6</title>
   <style>
-    div {
+    header{
       display: flex;
+      flex-direction: row;
+      margin: 0;
+      height: 5vh;
     }
-    h3 {
-      background-color: #78C1F3;
-    }
+    .logo {
+        background-color: #FFB6B9;
+        padding-left: 0;
+        font-weight: bold;
+        width: 50px;
+        display: flex;
+        align-items: center;
+      }
+      .box {
+        background-color: #BBDED6;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 20px;
+      }
+      .menu {
+        background-color: #FAE3D9;
+        text-align: right;
+        width: 50px;
+        display: flex;
+        align-items: center;
+      } 
+      a {
+        text-decoration: none;
+      }
+    
   </style>
 </head>
 
 <body>
   <header>
-    <div class="wrapper">
-      <h3>로고</h3>
-      <input type="text" id="serch">
-      <button type="button">검색</button>
-      <div>메뉴</div>
+    <div class="logo">로고</div>
+    <div class="box">
+      <input type="text" id="검색" name="검색">
+      <button type="button" >검색</button>
     </div>
+    <div class="menu"><a href="#" target="_blank">메뉴</a></div>
   </header>
 </body>
 </html>

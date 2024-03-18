@@ -58,3 +58,6 @@ em, rem, flex, viewport단위
 
 ## 240315 학습내용
 flex(align, jusrify, gap, flow)
+
+## 240318 학습내용
+flex 연습
