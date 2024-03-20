@@ -64,3 +64,6 @@ flex 연습
 
 ## 240319 학습내용
 flex 예제, 수열선택자
+
+## 240320 학습내용
+background(attachment, image,repeat, position, size) 학습
