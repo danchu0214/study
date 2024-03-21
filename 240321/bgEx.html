@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>bgEx</title>
+    <style>
+        fieldset {
+            margin: 50px auto;
+            width: 60vw; height: 30vw;
+            text-align: center;
+            border: 5px solid #222;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+        }
+        input {
+            width: 45vw; height: 4vw;
+            border-radius: 30px;
+        }
+        p {
+            margin: 0;
+        }
+        #userName {
+            background-image: url(./img/user-solid.svg);
+            background-repeat: no-repeat;
+            background-position: 15px;
+            background-size: 2vw;
+        }
+        #userEmail {
+            background-image: url(./img/envelope-solid.svg);
+            background-repeat: no-repeat;
+            background-position: 15px;
+            background-size: 2vw;
+        }
+        #userTel {
+            background-image: url(./img/mobile-solid.svg);
+            background-repeat: no-repeat;
+            background-position: 15px;
+            background-size: 2vw;
+        }
+        ::placeholder {
+            padding: 45px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <p>
+              <label for="userName"></label>
+              <input type="text" name="이름을 작성하세요" id="userName" placeholder="이름을 입력하세요" autofocus required>
+            </p>
+            <p>
+                <label for="userEmail"></label>
+                <input type="email" name="userEmail" id="userEmail" placeholder="이메일을 입력하세요">
+            </p>
+            <p>
+                <label for="userNumber"></label>
+                <input type="tel" name="userTel" id="userTel" placeholder="연락처를 입력하세요">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

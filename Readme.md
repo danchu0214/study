@@ -67,3 +67,6 @@ flex 예제, 수열선택자
 
 ## 240320 학습내용
 background(attachment, image,repeat, position, size) 학습
+
+## 240321 학습내용
+flexItem 학습
