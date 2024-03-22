@@ -70,3 +70,6 @@ background(attachment, image,repeat, position, size) 학습
 
 ## 240321 학습내용
 flexItem 학습
+
+## 240322 학습내용
+flexItem 연습, reset.css, font.css
