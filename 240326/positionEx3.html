@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>positionEx3</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            margin: 0 auto; padding: 0;
+            background-color: antiquewhite;
+            width: 50vh; height: 50px;
+            border-radius: 0 0 20px 20px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: fixed;
+            top: 0; right: 0; left: 0;
+        }
+        li {
+            height: 50px; width: 100px;
+            line-height: 50px;
+        }
+        li:nth-child(1) {
+            background-color: #5F5D9C;
+        }
+        li:nth-child(2) {
+            background-color: #6196A6;
+        }
+        li:nth-child(3) {
+            background-color: #A4CE95;
+        }
+        li:nth-child(4) {
+            background-color: #D7C0AE;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        article * {
+            margin: 0;
+            width: 100%;
+            height: 80vw;
+            padding-top: 100px;
+            font-size: 2rem;
+            color: #fff;
+        }
+        #box1 {
+            background-color: #5F5D9C;
+        }
+        #box2 {
+            background-color: #6196A6;
+        }
+        #box3 {
+            background-color: #A4CE95;
+        }
+        #box4 {
+            background-color: #D7C0AE;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="gnb">
+        <li><a href="#box1">box1</a></li>
+        <li><a href="#box2">box2</a></li>
+        <li><a href="#box3">box3</a></li>
+        <li><a href="#box4">box4</a></li>
+    </ul>
+
+    <article>
+        <h2 id="box1">box1</h2>
+    </article>
+    <article>
+        <h2 id="box2">box2</h2>
+    </article>
+    <article>
+        <h2 id="box3">box3</h2>
+    </article>
+    <article>
+        <h2 id="box4">box4</h2>
+    </article>
+</body>
+</html>

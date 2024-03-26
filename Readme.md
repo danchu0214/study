@@ -76,3 +76,6 @@ flexItem 연습, reset.css, font.css
 
 ## 240325 학습내용
 position  absolute, fixed, relative 학습
+
+## 240326 학습내용
+position 연습, assets 작성

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>positionEx2</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        ::selection {/* 문서 드래그 했을 때 */
+            background-color: #EBC49F;
+            /* text-decoration: line-through; */
+        }
+        .blank {
+            height: 300vh;
+        }
+        p {
+            width: 400px;
+            line-height: 1.5;
+        }
+        p em {
+            background-color: #B0C5A4;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1rem;
+            font-style: normal;
+        }
+        .btn {
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            background-color: #D37676;
+            font-size: 1.2rem;
+            width: 70px; height: 70px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 70px;
+
+            position: fixed;
+            bottom: 20px; right: 20px;
+        }
+        .btn:hover {
+            background-color: #EBC49F;
+            bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>positionEx2</h2>
+    <p>fixed 값을 사용하는 요소 역시 absolite 값을 사용하는 요소처럼 문서 흐름과는 상관 없이 좌표로 위치를 결정하지만, 기준이 되는 요소가 <em>부모 요소가 아니라 브라우저가 기준</em>이 된다</p>
+    <p>한번 배치되면 fixed라는 이름처럼 브라우저 창을 스크롤하더라도 계속 고정되어 표시된다.</p>
+    <div class="blank"></div>
+    <a href="#" class="btn">위로</a>
+</body>
+</html>
