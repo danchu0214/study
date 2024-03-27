@@ -27,7 +27,16 @@ body {
 /* 스크롤바 가로 크기*/
 body::-webkit-scrollbar {
     width: 8px;
-    scrollbar-width: thin;
+}
+/* 스크롤바 배경 */
+body::-webkit-scrollbar-track {
+  background-color: #910A67;
+}
+/* 스크롤바 핸들 */
+body::-webkit-scrollbar-thumb {
+  background-color: #F2D1D1;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 /* nav */

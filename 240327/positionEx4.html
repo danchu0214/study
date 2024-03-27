@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>positionEx4</title>
+    <style>
+        body, h1, h2 { margin: 0; }
+        header { background-color: #576CBC; color: #fff; height: 100px; padding: 20px; }
+        main {
+            display: flex;
+        }
+        main article {
+            background-color: #19376D;
+            color: #fff;
+            flex-grow: 3;
+            padding: 20px; height: 200vw;
+
+            display: flex;
+            align-items: flex-start;
+        }
+        main aside {
+            background-color: #A5D7E8;
+            flex-grow: 1;
+            padding: 20;
+            height: 200px;
+
+            position: sticky;
+            top: 0;
+        }
+        footer {
+            background-color: #0B2447;
+            color: #fff;
+            padding: 20px; height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>positionEx4</h1>
+        <h2>header</h2>
+    </header>
+    <main>
+        <article>
+            <h2>main contents</h2>
+        </article>
+        <aside>
+            <h2>sticky sidebar</h2>
+        </aside>
+    </main>   
+    <footer>
+        <h2>footer</h2>
+    </footer> 
+</body>
+</html>
