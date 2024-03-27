@@ -79,3 +79,6 @@ position  absolute, fixed, relative 학습
 
 ## 240326 학습내용
 position 연습, assets 작성
+
+## 240327 학습내용
+sticky, position예제, z-index
