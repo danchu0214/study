@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>navEx1</title>
+    <style>
+        body {
+            margin: 0;
+            min-width: 700px;
+        }
+
+        header {
+            background-color: #ffdbc3;
+            height: 115px;
+
+            display: flex;
+        }
+
+        div{
+            background-color: #cece5a;
+            width: 120px;
+            height: 60px;
+            margin: 30px;
+            text-align: center;
+            line-height: 60px;
+        }
+        h2 {
+            /* margin: 30px; */
+        }
+
+        ul {
+            list-style: none;
+
+            display: flex;
+            justify-content: right;
+            align-content: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .box1 li {
+            background-color: #fd8d14;
+            width: 156px;
+            height: 36px;
+        }
+
+        .box a {
+            color: #000;
+        }
+
+        .box2 li {
+            width: 520px;
+            height: 55px;
+            background-color: #c51605;
+        }
+
+        .box2 a {
+            color: #fff;
+        }
+
+        p {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 700px 이하로 줄어들지 않음 -->
+    <header>
+        <div>
+            <h2>로고</h2>
+        </div>
+        <ul class="box box1">
+            <li><a href="#">로그인</a></li>
+            <li>|</li>
+            <li><a href="#">회원가입</a></li>
+        </ul>
+        <ul class="box box2">
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menu2</a></li>
+            <li><a href="#">Menu3</a></li>
+            <li><a href="#">Menu4</a></li>
+        </ul>
+    </header>
+    <p>main</p>
+</body>
+
+</html>

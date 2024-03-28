@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="utf-8">
-  <title>positionEx6</title>
+  <title>positionEx7</title>
   <style>
-    body { margin: 0; line-height: 1.6; font-size: 1.2rem; text-align: center; text-transform: capitalize; }
+    body {
+      margin: 0;
+      line-height: 1.6;
+      font-size: 1.2rem;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
     h2 {
       position: sticky;
-      top:0;
-      padding: 20px;
-      margin: 0;
-    }
-    h2:nth-of-type(1) { background-color: #190482; color: #fff;}
-       h2:nth-of-type(2) { background-color: #7752FE; color: #fff;}
-       h2:nth-of-type(3) { background-color: #8E8FFA;}
-       h2:nth-of-type(4) { background-color: #C2D9FF;}
-       h2:nth-of-type(5) { background-color: #e2edff;}
-
-    section {
       width: 50%;
+      top: 0;
+      padding: 5px;
       margin: 0 auto;
-      padding: 30px;
+      border-radius: 0 0 25px 25px;
+
+      background-color: #8E8FFA;
+      z-index: 100;
     }
+    .box1 { 
+      height: 100vh;
+      background-image: url(./img/1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .box2 { 
+      height: 100vh;
+      background-image: url(./img/2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .box3 { 
+      height: 100vh;
+      background-image: url(./img/3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .box4 { 
+      height: 100vh;
+      background-image: url(./img/4.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .box5 { 
+      height: 100vh;
+      background-image: url(./img/5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
   </style>
 </head>
 
 <body>
-  <h2>title1</h2>
-  <section>
-    <h3>01</h3>
-    <p></p>
-  </section>
+  <div class="box1">
+    <h2>title1</h2>
+  </div>
 
-  <h2>title2</h2>
-  <section>
-    <h3>02</h3>
-    <p></p>
-  </section>
+  <div class="box2">
+    <h2>title2</h2>
+  </div>
 
-  <h2>title3</h2>
-  <section>
-    <h3>03</h3>
-    <p></p>
+  <div class="box3">
+    <h2>title3</h2>
+  </div>
 
-  </section>
+  <div class="box4">
+    <h2>title4</h2>
+  </div>
 
-  <h2>title4</h2>
-  <section>
-    <h3>04</h3>
-    <p></p>
-  </section>
-
-  <h2>title5</h2>
-  <section>
-    <h3>05</h3>
-    <p></p>
-  
-  </section>
+  <div class="box5">
+    <h2>title5</h2>
+  </div>
 </body>
+
 </html>
