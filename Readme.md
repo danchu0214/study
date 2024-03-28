@@ -82,3 +82,6 @@ position 연습, assets 작성
 
 ## 240327 학습내용
 sticky, position예제, z-index
+
+## 240328 학습내용
+가변비디오, videoRatio, aspect-radio
