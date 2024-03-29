@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url(../assets/style/reset.css);
+body {
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+article {
+    font-size: 3rem;
+    height: 300vh;
+    margin-top: 200px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 15px;
+    background-color: #F67280;
+}
+.box {
+    background-color: #C06C84;
+    color: #fff;
+    width: 100%;
+}
+ul {
+    font-size: 1rem;
+    background-color: #C06C84;
+    color: #fff;
+    margin: 0; padding: 0;
+
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto; padding: 0;
+
+    position: sticky;
+    top: 0;
+}
+li {
+    position: relative;
+}
+li a {
+    display: block;
+    padding: 10px 0;
+}
+li a:hover {
+    background-color: #fff;
+    color: #C06C84;
+}
+ul li .sub {
+    display: none;
+}
+ul li:hover .sub{
+    display: block;
+}
