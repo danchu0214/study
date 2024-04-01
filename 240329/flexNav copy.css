@@ -55,3 +55,13 @@ ul li .small {
 ul li:hover .small{
     display: block;
 }
+/* 각 각의 소메뉴 */
+.main-menu li .sub-menu {
+    /* display: none */
+}
+/* 각 대메뉴에 마우스를 올리면, 해당 대메뉴의 소메뉴가 나타남 */
+
+.main-menu li .sub-menu {
+    /* display: block; */
+    background-color: antiquewhite;
+}

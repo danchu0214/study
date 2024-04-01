@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>transition_timing_function</title>
+    <style>
+           h1, h2 {
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            list-style: none;
+            border: 2px solid #000;
+            width: 90vw; height: 60vh;
+            margin: 0 auto; padding: 0;
+
+            display: flex;
+            /* justify-content: space-evenly;
+            align-items: top; */
+        }
+        .container li {
+            line-height: 2rem; text-align: center; 
+            background-color: #FFE3E1;
+            height: 2rem;
+            margin: 0.4rem;
+            /* width: calc(20% - 0.8rem);
+            flex-shrink: 0; */
+            flex-grow: 1;
+            flex-basis: 100px;
+
+            font-weight: bold;
+
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        .container:hover li:nth-child(1) {
+            background-color: #A8D8EA;
+            transition-timing-function: linear;
+        }
+        .container:hover li:nth-child(2) {
+            background-color: #DCD6F7;
+            transition-timing-function: ease;
+        }
+        .container:hover li:nth-child(3) {
+            background-color: #AA96DA; color: #fff;
+            transition-timing-function: ease-in;
+        }
+        .container:hover li:nth-child(4) {
+            background-color: #61C0BF; color: #fff;
+            transition-timing-function: ease-out;
+        }
+        .container:hover li:nth-child(5) {
+            background-color: #FCBAD3; color: #fff;
+            transition-timing-function: ease-in-out;
+        }
+        .container:hover li:nth-child(6) {
+            background-color: #FFFFD2;
+            transition-timing-function: cubic-bezier(.76,-0.05,.68,.89); /* 사용자 정의 움직임 */
+        }
+        .container:hover li {
+            height: calc(60vh - 0.8rem);
+        } 
+    </style>
+</head>
+<body>
+    <h1>transition-timing-function</h1>
+    <h2>움직임 형태 제어</h2>
+    <ul class="container">
+        <li>linear</li>
+        <li>ease</li>
+        <li>ease-in</li>
+        <li>ease-out</li>
+        <li>ease-in-out</li>
+        <li>cubic-bezier</li>
+    </ul>
+</body>
+</html>

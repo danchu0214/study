@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>transEx1</title>
+    <style>
+        .container {
+            border: 2px solid #000;
+            height: 230px; width: 100%;
+        }
+        .item {
+            text-align: center;
+            font-weight: bold;
+            background-color: #ddd;
+            width: 100px; height: 100px;
+            margin: 10px;
+        }
+        .item:nth-child(1) { background-color: #EFBC9B; }
+        .item:nth-child(2) { background-color: #D6DAC8; }
+
+        .container:hover .item {
+            transform: translate(84vw) rotate(360deg);
+            transition: 0.7s;
+        }
+        .container:hover .item:nth-child(2) {
+            transition-timing-function: ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>trans 연습 1</h1>
+    <!-- 마우스를 영역 위에 올리면 굴러서 이동. 두번째 박스는 기다렸다가 시작 -->
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+    </div>
+</body>
+
+</html>

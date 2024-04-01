@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>transition_delay</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            list-style: none;
+            border: 2px solid #000;
+            width: 90vw; height: 60vh;
+            margin: 0 auto; padding: 0;
+
+            display: flex;
+            /* justify-content: space-evenly;
+            align-items: top; */
+        }
+        .container li {
+            line-height: 2rem;
+            background-color: #FFE3E1;
+            /* height: 30px; width: 18%;
+            line-height: 30px; */
+            height: 2rem;
+            margin: 0.4rem;
+            width: calc(20% - 0.8rem);
+            flex-shrink: 0;
+            /* flex-grow: 1; */
+
+            font-weight: bold;
+
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        .container:hover li:nth-child(1) {background-color: #F4EEFF; transition-delay: 0;}
+        .container:hover li:nth-child(2) {background-color: #DCD6F7; transition-delay: 0.5s;}
+        .container:hover li:nth-child(3) {background-color: #A6B1E1; color: #fff; transition-delay: 1s;}
+        .container:hover li:nth-child(4) {background-color: #424874; color: #fff; transition-delay: 2s;}
+        .container:hover li:nth-child(5) {background-color: #323861; color: #fff; transition-delay: 3s;}
+        .container:hover li {
+            height: calc(60vh - 0.8rem);
+        } 
+    </style>
+</head>
+
+<body>
+    <h1>transition-delay</h1>
+    <ul class="container">
+        <li>바로진행</li>
+        <li>0.5초</li>
+        <li>1초</li>
+        <li>2초</li>
+        <li>3초</li>
+    </ul>
+</body>
+</html>
