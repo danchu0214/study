@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>transEx4</title>
+    <style>
+        body {
+            background-color: #FFF3DA;
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 700px; height: 300px;
+            background-color: #fff;
+            margin: 50px auto;
+
+            position: relative;
+        }
+        .box h1 {
+            padding: 10px 20px 5px 20px;
+            margin: 0;
+
+            position: relative;
+        }
+        .box h1::after {
+            content: "";
+            width: 40%; height: 2px;
+            background-color: #427D9D;
+            position: absolute;
+            left: 20px; bottom: 0;
+        }
+        .box .content1 {
+            padding: 10px 20px;
+            width: 40%;
+        }
+        .box .content2 img {
+            width: 25px; height: 25px;
+            padding: 0 20px;
+        }
+        .box .content2 p {
+            background-color: #427D9D;
+            position: absolute;
+            bottom: 0;
+            margin: 0; padding: 5px 20px;
+            width: 660px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>name</h1>
+        <div class="content1">
+            <p>모든 국민은 신속한 재판을 받을 권리를 가진다. 형사피고인은 상당한 이유가 없는 한 지체없이 공개재판을 받을 권리를 가진다.</p>
+        </div>
+        <div class="content2">
+            <img src="./img/120px-Home-icon.svg.png" alt="home">
+            <img src="./img/email_2099199.png" alt="email">
+            <img src="./img/smartphone-call_15874.png" alt="phone">
+            <p>profile</p>
+        </div>
+    </div>
+</body>
+
+</html>

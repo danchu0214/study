@@ -91,3 +91,6 @@ flexNav
 
 ## 240401 학습내용
 transform, transition 학습, 예제
+
+## 240402 학습내용
+trans예제, 포지션 중앙정렬, perspective
