@@ -16,6 +16,7 @@
             margin: 50px auto;
 
             position: relative;
+            overflow: hidden;
         }
         .box h1 {
             padding: 10px 20px 5px 20px;
@@ -38,7 +39,20 @@
             width: 25px; height: 25px;
             padding: 0 20px;
         }
-        .box .content2 p {
+        .box .content3 img {
+            position: absolute;
+            bottom: -50px; right: 0 ;
+            width: 350px;
+            border-radius: 100% 0 0 100%;
+            z-index: 100;
+
+        }
+        .box .content3 img:hover {
+            transition-property: all;
+            transition-duration: 0.7s;
+            transform: translateX(-10px);
+        }
+        .box .content3 p {
             background-color: #427D9D;
             position: absolute;
             bottom: 0;
@@ -58,6 +72,9 @@
             <img src="./img/120px-Home-icon.svg.png" alt="home">
             <img src="./img/email_2099199.png" alt="email">
             <img src="./img/smartphone-call_15874.png" alt="phone">
+        </div>
+        <div class="content3">
+            <img src="./img/5ccf5a2b499895e4a4c996597a4963a5.png" alt="img">
             <p>profile</p>
         </div>
     </div>
