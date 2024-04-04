@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>animation_축약형</title>
+    <style>
+        .wrapper .box {
+            width: 150px; height: 150px;
+            background: linear-gradient(#496989 50%, #E2F4C5);
+            border-radius: 100%;
+            z-index: 100;
+
+            animation-name: ani1;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+        .box p {
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            color: #fff;
+        }
+        @keyframes ani1 {
+            100% {
+                transform: translateX(80vw) rotate(360deg);
+            }
+        }
+        .wrapper .block {
+            width: 170px; height: 90px;
+            background-color: #76885B;
+            font-weight: bold;
+            color: #fff;
+
+            position: absolute;
+            top: 90px; left: 200px;
+
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>animation 축약형</h1>
+    <div class="wrapper">
+        <div class="box">
+            <p>축약형</p>
+        </div>
+        <div class="block">block</div>
+    </div>
+</body>
+</html>

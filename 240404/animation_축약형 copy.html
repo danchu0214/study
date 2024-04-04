@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>animation_축약형</title>
+    <link rel="stylesheet" href="./animation.css">
+    <style>
+        .wrapper {
+            font-weight: bold;
+            font-size: 1.3rem;
+            width: 100%;
+            display: flex;
+            color: #fff;
+        }
+        .block {
+            width: 200px; height: 100px;
+            background-color: #A79277;
+        }
+        .box {
+            width: 200px; height: 200px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            background: linear-gradient(#007F73, #FFF455);
+
+            /* animation-name: mov2;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 3;
+            animation-direction:alternate ;
+
+            position: absolute;
+            left: 0; */
+
+            /* 순서에 상관없이 띄어쓰기로 구분. 두번째 나오는 s는 대기 시간으로 생략 가능 */
+            animation: mov3 2s .5s 3 ease alternate forwards;
+        }
+        @keyframes mov1 {
+            100% {
+                background-image: linear-gradient(#FFEBB2, #8644A2);
+                margin-left: 70vw;/* 레이아웃에 영향을 줌 */
+            }
+        }
+        @keyframes mov2 {
+            100% {
+                background-image: linear-gradient(#FFEBB2, #8644A2);
+                transform: rotate(360deg);
+                left: 80%;
+            }
+        }
+        @keyframes mov3 {
+            100% {
+                transform: translateX(80vw) rotate(360deg);
+            }
+
+        }
+
+        .box:hover {
+            animation-play-state: paused;/* 일시멈춤 */
+        }
+    </style>
+</head>
+<body>
+    <h1>animation 축약형</h1>
+    <div class="wrapper">
+        <div class="box">
+            <p>축약형</p>
+        </div>
+        <div class="block">block</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>aniEx1</title>
+    <style>
+        @keyframes gradient{
+            30% {
+                background-position: 0 50%;
+            } 60% {
+                background-position: 100% 50%;
+            } 100% {
+                background-position: 0 30%;
+            }
+        }
+        body {
+            margin: 0;
+            background: linear-gradient(-125deg, #49243E 10%, #A34343 40%, #C0D6E8);
+            background-size: 400%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            animation: linear-gradient(-125deg, #49243E 10%, #A34343 40%, #C0D6E8) 10s infinite ease-in-out alternate;
+        }
+        .btn {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 3px solid #fff;
+            padding: 10px 30px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            border-radius: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        1.움직이는 그라디언트 배경
+        2.중앙 정렬 된 고스트 버튼
+     -->
+    <a href="#" class="btn">aniEx1</a>    
+</body>
+</html>

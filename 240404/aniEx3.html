@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>aniEx3</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+
+            overflow: hidden;
+        }
+        .container .bicycle-wrapper {
+            animation: mov 3s infinite linear;
+
+            position: relative;
+            z-index: 99;
+        }
+        .container .bicycle-wrapper .bicycle {
+
+        }
+        .container .bicycle-wrapper .wheel {
+            animation: spin infinite 1s linear;
+
+            position: absolute;
+            bottom: -89px; left: -88px;
+            /* transform: translate(-50%, 50%); */
+        }
+        .container .bicycle-wrapper .wheel:last-child {
+            left: auto; /* 기존 left 무력화 */
+            right: -95px;
+        }
+        .container .fireworks {
+            /* align-self: flex-start; */
+            margin: 20px 20px auto auto;
+            animation: scale 3s infinite alternate;
+        }
+
+        @keyframes scale {
+            0% {opacity: 0;}
+            100% { transform: rotate(360deg) scale(0.5); opacity: 1;}
+        }
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg) ;
+            }
+        }
+        @keyframes mov {
+            0% { opacity: 0; left: -10%;}
+            10% { opacity: 1; left: 0;}
+            80% { opacity: 1; left: 100%;}
+            100% { opacity: 0; left: 110%;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bicycle-wrapper">
+            <img src="./images/bicycle.png" alt="bicycle" class="bicycle">
+            <img src="./images/wheel.png" alt="wheel" class="wheel">
+            <img src="./images/wheel.png" alt="wheel" class="wheel">
+        </div>
+        <img src="./images/fireworks.png" alt="fireworks" class="fireworks">
+    </div>
+</body>
+
+</html>
