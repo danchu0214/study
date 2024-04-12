@@ -109,3 +109,6 @@ animation Ex
 
 ##240411 학습내용
 display:grid 학습
+
+##240412 학습내용
+display:grid예제, meta viewport 학습
