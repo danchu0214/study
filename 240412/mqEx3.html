@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>mqex3</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+
+            background-color: #F5EFE6
+        }
+
+        .container {
+            width: 90%;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 50px auto;
+
+            display: grid;
+            grid-template-columns: 45vw 45vw;
+            gap: 0.3rem;
+            justify-items: center;
+            align-items: center;
+
+        }
+
+        .box {
+            background-color: #AEBDCA;
+            color: #fff;
+            width: 45vw;
+        }
+
+        .box4 {
+            display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 25vw);
+                align-items: center;
+                justify-content: center;
+            }
+
+            .box {
+                column-gap: 2rem;
+                width: 25vw;
+            }
+
+            .box4,
+            .box10 {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(4, 20vw);
+            }
+
+            .box {
+                width: 20vw;
+            }
+
+            .box10 {
+                display: block;
+            }
+        }
+
+        @media (width >=1200px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(5, 18vw);
+            }
+
+            .box {
+                width: 18vw;
+            }
+
+            .box4 {
+                display: block;
+            }
+
+            .box10 {
+                background-color: #F2D1D1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">itme1</div>
+        <div class="box box2">itme2</div>
+        <div class="box box3">itme3</div>
+        <div class="box box4">itme4</div>
+        <div class="box box5">itme5</div>
+        <div class="box box6">itme6</div>
+        <div class="box box7">itme7</div>
+        <div class="box box8">itme8</div>
+        <div class="box box9">itme9</div>
+        <div class="box box10">itme10</div>
+    </div>
+</body>
+
+</html>
