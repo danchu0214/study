@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+body {
+    font-family: "Sedan", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-size: 3ch;
+    text-transform: uppercase;
+    background: url(./img/4.jpg) no-repeat fixed 50%/ cover;
+    color: #fff;
+}
+nav .global-menu {
+    /* display: grid; */
+    display: none;
+    /* grid-auto-rows: 40px; */
+}
+nav .global-menu.active {
+    display: grid;
+}
+nav a {
+    display: block;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+}
+nav .mobile-btn {
+    background:rgba(156, 161, 104, 0.7) url(./img/more_vert_FILL0_wght400_GRAD0_opsz24.svg) no-repeat  98% 50% / 30px;
+}
+/* nav .mobile-btn::after {} */

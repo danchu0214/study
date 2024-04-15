@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+.mobile-btn {
+    padding-right: 10vw;
+}
+.global-menu {
+    display: none;
+}
+.global-menu.active {
+    display: grid;
+}

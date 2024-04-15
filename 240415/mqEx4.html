@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="../assets/style/reset.css">
+    <style>
+        body {
+            background: url(./img/4.jpg) no-repeat;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2rem;
+            padding: 0; margin: 0;
+        }
+        nav {
+            display: grid;
+            /* gap: 15px; */
+        }
+        nav > a {
+            text-decoration: none;
+            color: #fff;
+            padding:15px 0 10px 20px;
+            border-bottom: 1px solid #fff;
+        }
+        nav a:hover {
+            background-color: #E84545;
+        }
+        .global-menu {
+            margin: 0; padding: 0;
+        }
+        .global-menu li {
+            list-style: none;
+            border-bottom: 1px solid #fff;
+            display: grid;
+            /* gap: 15px; */
+            padding: 15px 0 15px 20px;
+        }
+        
+
+        @media (min-width: 768px) {
+            nav {
+                border-bottom: 2px solid #fff;
+            }
+            nav ul {
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+            .global-menu li {
+                border-right: 1px solid #fff;
+                padding-top: 10px;
+            }
+            .global-menu li:last-child {
+                border-bottom: 0;
+            }
+            nav a {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            nav ul {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+            .global-menu li {
+                border-bottom: 0;
+                padding-right: 20px;
+            }
+            .global-menu li:last-child {
+                border: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="global-menu">
+            <li><a href="#"></a>home</li>
+            <li><a href="#"></a>about</li>
+            <li><a href="#"></a>service</li>
+            <li><a href="#"></a>product</li>
+            <li><a href="#"></a>contact</li>
+        </ul>
+        <a href="#" class="mobile-btn">menu</a>
+    </nav>
+</body>
+
+</html>

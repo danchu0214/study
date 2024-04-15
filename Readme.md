@@ -112,3 +112,6 @@ display:grid 학습
 
 ##240412 학습내용
 display:grid예제, meta viewport 학습
+
+##240415 학습내용
+meta viewport 예제, 홈페이지 예제
