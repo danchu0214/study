@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+:root {
+    --color-primary: #fff1f8;
+    --color-cl-1: #ffd6d1;
+    --color-cl-2: #e2f8ff;
+    --color-cl-3: #fafaa3;
+    --color-cl-4: #d1ffe6;
+
+    --font-title-lg: 2.1rem;
+    --font-title-md: 1.5rem;
+    --font-title-sm: 1.2rem;
+}

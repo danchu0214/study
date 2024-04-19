@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.time {
+    display: none;
+}
+.Calender {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+}
+.Calender .WEEK {
+    background-color: var(--color-primary);
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 85px;
+    height: 500px;
+}
+.Calender .Cl {
+    display: flex;
+    gap: 15px;
+    justify-content: start;
+    margin-bottom: 210px;
+}
+.Calender .WEEK h2 {
+    font-size: var(--font-title-lg);
+}
+.Calender .WEEK h3 {
+    font-size: var(--font-title-lg);
+    font-weight: 300;
+}
+.Calender .WEEK .Sc{
+    padding-top: 25px; padding-left: 7px;
+    margin: 0 auto 100px;
+    height: 150px; width: 96%;
+    border: 1px solid #f2d3d8;
+    border-radius: 10px;
+}
+.Calender .WEEK .Sc strong {
+    font-size: 15px;
+}
+.Calender .WEEK .Sc p {
+    margin-top: 25px;
+    font-size: 15px;
+}
+.Calender .WEEK .gr {
+    background-color: var(--color-cl-4);
+}

@@ -124,3 +124,6 @@ meta viewport 예제, 홈페이지 예제
 
 ##240418 학습내용
 assets fonts 추가, 홈페이지 예제
+
+##240419 학습내용
+홈페이지 예제, script, grid 예제

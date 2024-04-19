@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <!-- favicon -->
     <!-- og -->
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.1/swiper-bundle.min.css">
     <!-- 성능 최적화를 고려한다면 link, 관리를 고려한다면 @import -->
     <link rel="stylesheet" href="../assets/style/reset.css">
     <!-- 공통 내용 -->
@@ -15,6 +17,10 @@
     <link rel="stylesheet" href="./layout.css">
     <!-- layout: 현재페이지 -->
     <link rel="stylesheet" href="./index.css">
+
+      <!-- kakao js -->
+      <!-- swiper js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.1/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -41,7 +47,21 @@
     <!-- contents -->
     <!-- main-slide -->
     <section class="main-slide">
-        <div class="main-swiper">main-swiper</div>
+        <!-- 슬라이드 관련 -->
+        <div class="main-swiper swiper">
+            <!-- 슬라이드 이미지 -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide main-bg1">Slide 1</div>
+                <div class="swiper-slide main-bg2">Slide 2</div>
+                <div class="swiper-slide main-bg3">Slide 3</div>
+                <div class="swiper-slide main-bg4">Slide 4</div>
+            </div>
+            <!-- 슬라이드 페이지내이션 -->
+            <div class="swiper-pagination"></div>
+            <!-- 사이드 버튼(캐러셀) -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </section>
 
     <!-- main-intro -->
@@ -133,8 +153,8 @@
     </section>
     <!-- main-youtube -->
     <section class="main-youtube">
-        <div class="main-youtube-text margin-lg">
-            <h2 class="main-title">Our youtube</h2>
+        <div class="main-youtube-text margin-lg flex-container">
+            <h2 class="main-youtube-title">Our youtube</h2>
             <p class="main-youtube-des">In an ideal world this text wouldn’t exist, a client would acknowledge the
                 importance of having web copy
                 before the design starts. Needless to say it’s very important, content is king and people are beginning
@@ -142,7 +162,7 @@
                 copy to be written before the design phase, this is sad but true.</p>
         </div>
         <div class="main-youtube-video">
-            <iframe width="354px" height="199px"
+            <iframe
                 src="https://www.youtube.com/embed//jeVpZGHvmME?si=AVDb3OQYjhrv5qLI&amp;controls=0&loop=1&mute=1&autoplay=1"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -152,7 +172,7 @@
     <!-- main-service -->
     <section class="main-service">
         <h2 class="main-title">Our Service</h2>
-        <ul class="main-service-gallery margin-md">
+        <ul class="main-service-gallery margin-md flex-container">
             <li><a href="#"><img src="./images/img-05.jpg" alt="branding"></a>
                 <div class="service-gallery-text">
                     <h4>Branding</h4>
@@ -189,31 +209,30 @@
     <section class="main-location">
         <h2 class="main-title">Location</h2>
         <ul class="location-menu margin-lg">
-            <li class="location-office">
-                <h3>office</h3>
-                <div class="location-map tab-box">
-                    <div class="kakao-map">카카오 지도</div>
-                    <ul class="location-office-info">
-                        <li><strong>ADDRESS</strong>795 Folsom Ave, Suite 600 San Francisco</li>
-                        <li><strong>TEL</strong>02-1234-5678</li>
-                        <li><strong>FAX</strong>02-1234-5678</li>
-                        <li><strong>SUB</strong>Working at the nexus of aesthetics and sustainability to craft meaningful design ideas that
-                            endure.</li>
-                        <li><strong>BUS</strong>This theme does everything you could possibly want it to do and, it is beautifully designed.</li>
-                    </ul>
-                </div>
-            </li>
-            <li class="location-factiory">
-                <h3>factory</h3>
-                <div class="tab-box">
-                    <p>내용 없음</p>
-                </div>
-            </li>
+          <li class="location-office active">
+            <h3>office</h3> 
+            <div class="location-map tab-box">
+              <div class="kakao-map">카카오 지도</div>
+              <ul class="location-office-info">
+                <li><strong>ADDRESS</strong>795 Folsom Ave, Suite 600 San Francisco</li>
+                <li><strong>TEL</strong>02-1234-5678</li>
+                <li><strong>FAX</strong>02-1234-5678</li>
+                <li><strong>SUB</strong>Working at the nexus of aesthetics and sustainability to craft meaningful design ideas that endure.</li>
+                <li><strong>BUS</strong>This theme does everything you could possibly want it to do and, it is beautifully designed.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="location-factory">
+            <h3>factory</h3>
+            <div class="tab-box">
+              <p>내용 없음</p>
+            </div>
+          </li>
         </ul>
-    </section>
+      </section>
     <!-- main-talk -->
     <section class="main-talk">
-        <div class="color-layer">
+        <div class="color-layer grid-container">
             <h2 class="main-talk-title">Let's talk</h2>
             <p>언론·출판에 대한 허가나 검열과 집회·결사에 대한 허가는 인정되지 아니한다.</p>
             <a href="#" class="ghost-btn">contact us</a>
@@ -222,7 +241,7 @@
 
     <!-- footer -->
     <footer class="footer">
-        <section footer-info>
+        <section class="footer-info grid-container padding-sm">
             <h2 class="footer-logo">로고</h2>
             <div class="footer-info-list">
                 <h3>CONTACT</h3>
@@ -234,7 +253,7 @@
             </div>
             <div class="footer-info-list">
                 <h3>SOCIAL</h3>
-                <ul>
+                <ul class="social-list flex-container">
                     <li><a href="#">
                             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <title>Facebook</title>
@@ -268,7 +287,7 @@
         </section>
         <div class="footer-copyright">
             <p>Copyright &copy; 2020 All Rights Reserved by DYAMI.</p>
-            <ul class="footer-policy">
+            <ul class="footer-policy flex-container">
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
@@ -277,6 +296,25 @@
 
     <!-- 위로 go-to-top -->
     <a href="#" class="go-to-top">위로</a>
-</body>
 
+    <script>
+        const swiper = new Swiper('.swiper', {
+                loop: true, // 반복
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+            });
+    </script>
+    </body>
 </html>
