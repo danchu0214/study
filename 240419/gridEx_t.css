@@ -1,3 +1,48 @@
 @charset "UTF-8";
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    body {
+        padding: 95px 45px;
+        /* position: relative; */
+    }
+
+    .bigContent {
+        /* width: 100%;  */
+        display: flex;
+        position: relative;
+        gap: 10px;
+    }
+
+    .bigContent .time {
+        display: grid;
+        font-size: var(--font-title-sm);
+        width: 50px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Calender {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-top: 45px;
+        gap: 20px;
+    }
+
+    .Calender .WEEK {
+        /* min-width: 185px; */
+        height: 600px;
+        margin: 0;
+    }
+
+    .Calender .Cl h2 {
+        position: absolute;
+        top: -20px;
+    }
+
+    .Calender .Cl h3 {
+        font-size: var(--font-title-sm);
+        margin-top: 40px;
+    }
+}

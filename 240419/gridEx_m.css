@@ -3,11 +3,13 @@
 .time {
     display: none;
 }
+
 .Calender {
     display: grid;
     width: 90%;
     margin: 0 auto;
 }
+
 .Calender .WEEK {
     background-color: var(--color-primary);
     width: 100%;
@@ -15,33 +17,101 @@
     margin-bottom: 85px;
     height: 500px;
 }
+
 .Calender .Cl {
     display: flex;
     gap: 15px;
     justify-content: start;
     margin-bottom: 210px;
 }
+
 .Calender .WEEK h2 {
     font-size: var(--font-title-lg);
+    margin: 0;
 }
+
 .Calender .WEEK h3 {
     font-size: var(--font-title-lg);
     font-weight: 300;
+    margin: 0;
 }
-.Calender .WEEK .Sc{
-    padding-top: 25px; padding-left: 7px;
+
+.Calender .WEEK .Sc {
+    padding-top: 25px;
+    padding-left: 7px;
     margin: 0 auto 100px;
-    height: 150px; width: 96%;
+    height: 125px;
+    width: 96%;
     border: 1px solid #f2d3d8;
     border-radius: 10px;
 }
+
 .Calender .WEEK .Sc strong {
     font-size: 15px;
 }
+
 .Calender .WEEK .Sc p {
     margin-top: 25px;
     font-size: 15px;
 }
+
 .Calender .WEEK .gr {
     background-color: var(--color-cl-4);
+}
+
+.Calender .WEEK .pk {
+    background-color: var(--color-cl-1);
+    margin-bottom: 50px;
+    height: 75px;
+}
+
+.Calender .WEEK .yl {
+    background-color: var(--color-cl-3);
+    height: 120px;
+}
+
+.Calender .WEEK .bl {
+    background-color: var(--color-cl-2);
+}
+
+.Calender .Tues .Cl {
+    margin-bottom: 10px;
+}
+
+.Calender .Tues .pk p {
+    margin: 20px auto;
+}
+
+.Calender .Tues .yl {
+    padding-top: 30px;
+}
+
+.Calender .Wed .Cl {
+    margin-bottom: 110px
+}
+
+.Calender .Wed .bl {
+    height: 20px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+.Calender .Wed .bl p {
+    margin-top: 10px;
+}
+
+.Calender .Thurs .Cl {
+    margin-bottom: 10px;
+}
+
+.Calender .Thurs .pk {
+    padding-top: 30px;
+}
+
+.Calender .Thurs .pk p {
+    margin-bottom: 10px;
+}
+
+.Calender .Thurs .yl {
+    padding-top: 30px;
 }

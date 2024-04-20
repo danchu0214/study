@@ -1,3 +1,22 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    body {
+        padding: 85px 35px;
+    }
+
+
+    .Calender {
+        margin: 0;
+        gap: 5px;
+    }
+
+    .Calender .Cl h2 {
+        position: inherit;
+    }
+
+    .Calender .Cl h3 {
+        font-size: var(--font-title-lg);
+        margin: 0;
+    }
+}
