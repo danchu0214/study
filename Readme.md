@@ -139,3 +139,6 @@ else-if,if-else 조건문, if조건문, 중접if문, 논리연산자, 비교연�
 
 ##240424 학습내용
 for반복문과 예제,switch 선택문과 예제, scope
+
+##240425 학습내용
+break키워드, continue 키워드,date, math,object객체, while
