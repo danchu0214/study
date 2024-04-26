@@ -142,3 +142,6 @@ for반복문과 예제,switch 선택문과 예제, scope
 
 ##240425 학습내용
 break키워드, continue 키워드,date, math,object객체, while
+
+##240426 학습내용
+shuffle, string객체, 배열 array, 제어문, 함수

@@ -1,0 +1,21 @@
+<body>
+  <script>
+    let productPrice = prompt("상품 가격을 입력해 주세요");
+
+    let discountRate = 0;
+    if (productPrice >= 150000) {
+      discountRate = 0.3;
+    } else if(productPrice <= 149999 && 100000 <= productPrice) {
+      discountRate = 0.2;
+    } else if(productPrice <= 99999 && 50000 <= productPrice) {
+      discountRate = 0.1;
+    } else if(productPrice <= 49999 && 30000 <= productPrice) {
+      discountRate = 0.05;
+    } else if(productPrice <= 29999 && 0 <= productPrice) {
+      discountRate = 0; 
+    } else {
+      alert('상품의 가격만 숫자로 입력해주세요');
+    } 
+    
+  </script>
+</body>
