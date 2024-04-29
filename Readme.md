@@ -145,3 +145,6 @@ break키워드, continue 키워드,date, math,object객체, while
 
 ##240426 학습내용
 shuffle, string객체, 배열 array, 제어문, 함수
+
+##240429 학습내용
+함수예제, 배열, 비동기통신, setInterver, setTimeout, this
