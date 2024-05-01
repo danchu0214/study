@@ -148,3 +148,6 @@ shuffle, string객체, 배열 array, 제어문, 함수
 
 ##240429 학습내용
 함수예제, 배열, 비동기통신, setInterver, setTimeout, this
+
+##240430 학습내용
+배열Array(filter,find,forEach,map,reduce),예제,forEach
