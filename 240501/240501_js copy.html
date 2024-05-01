@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단 게임</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #question {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>구구단 게임</h1>
+    <div id="question"></div>
+    <input type="text" id="answer" placeholder="정답을 입력하세요">
+    <button onclick="checkAnswer()">제출</button>
+    <div id="result"></div>
+    <div id="timer">남은 시간: <span id="time-left">60</span>초</div>
+
+    <script>
+        let score = 0;
+        let questionCount = 0;
+        let timer;
+        
+        function generateQuestion() {
+            const num1 = Math.floor(Math.random() * 9) + 1;
+            const num2 = Math.floor(Math.random() * 9) + 1;
+            return {
+                question: `${num1} x ${num2} = ?`,
+                answer: num1 * num2
+            };
+        }
+
+        function startTimer() {
+            let timeLeft = 60;
+            timer = setInterval(() => {
+                timeLeft--;
+                document.getElementById('time-left').textContent = timeLeft;
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    document.getElementById('question').textContent = '시간 초과! 탈락!';
+                    document.getElementById('result').textContent = `당신의 점수는 ${score}점입니다.`;
+                    setTimeout(() => {
+                        startGame();
+                    }, 2000);
+                }
+            }, 1000); // 1초씩 감소
+        }
+
+        function startGame() {
+            questionCount = 0;
+            score = 0;
+            startTimer();
+            askQuestion();
+        }
+
+        function askQuestion() {
+            const { question, answer } = generateQuestion();
+            document.getElementById('question').textContent = question;
+            document.getElementById('answer').value = '';
+            document.getElementById('result').textContent = '';
+        }
+
+        function checkAnswer() {
+            const userAnswer = parseInt(document.getElementById('answer').value);
+            const currentQuestion = document.getElementById('question').textContent;
+            const correctAnswer = parseInt(currentQuestion.split('=')[1]);
+            if (userAnswer === correctAnswer) {
+                score++;
+                document.getElementById('result').textContent = '정답입니다!';
+            } else {
+                document.getElementById('result').textContent = '틀렸습니다. 다시 시도하세요.';
+            }
+            questionCount++;
+            if (questionCount >= 5) {
+                clearInterval(timer);
+                document.getElementById('question').textContent = '게임 종료!';
+                document.getElementById('result').textContent = `당신의 점수는 ${score}점입니다.`;
+            } else {
+                askQuestion();
+            }
+        }
+
+        startGame();
+    </script>
+</body>
+</html>

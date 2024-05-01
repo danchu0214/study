@@ -151,3 +151,6 @@ shuffle, string객체, 배열 array, 제어문, 함수
 
 ##240430 학습내용
 배열Array(filter,find,forEach,map,reduce),예제,forEach
+
+##240501 학습내용
+event,DOM객체
