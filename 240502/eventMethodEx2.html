@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>eventMethodEx2</title>
+    <style>
+        .btn {
+            border: 2px solid #000;
+            text-decoration: none;
+            color: inherit;
+            padding: 3px 13px;
+        }
+        .box {
+            border: 3px solid #F38181;
+            background-color: #EAFFD0;
+            width: 200px; height: 200px;
+            margin: 50px auto;
+            /* border-radius: 500px; */
+        }
+    </style>
+    <script src="../assets/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.btn').on('click', () => {
+                $('#box1').css({backgroundColor : '#FCE38A'});
+            });
+            $('#box2').hover(() => {
+                $('#box2').css({
+                    borderRadius : 500
+                });
+            }, () => {
+                $('#box2').css({
+                    borderRadius : 0
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <a href="#" class="btn">버튼</a>
+    
+    <div class="box" id="box1">버튼 클릭시 박스 배경색 변경</div>
+    <div class="box" id="box2">박스 위에 마우스를 올리면 원으로 변하고 벗어나면 원래대로 돌아옴</div>
+</body>
+</html>

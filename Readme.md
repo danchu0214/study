@@ -154,3 +154,6 @@ shuffle, string객체, 배열 array, 제어문, 함수
 
 ##240501 학습내용
 event,DOM객체
+
+##240502 학습내용
+eventMethod와 예제, fadeIn+Out+Toggle, slideUp+Down+Toggle, selectors, js문제만들기
