@@ -157,3 +157,6 @@ event,DOM객체
 
 ##240502 학습내용
 eventMethod와 예제, fadeIn+Out+Toggle, slideUp+Down+Toggle, selectors, js문제만들기
+
+##240503 학습내용
+attr, addClass,removeClass,toggleClass,alideUp,Down
