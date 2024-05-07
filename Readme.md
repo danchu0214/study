@@ -96,10 +96,7 @@ transform, transition 학습, 예제
 trans예제, 포지션 중앙정렬, perspective
 
 ## 240403 학습내용
-trans예제, animation학습
-
-## 240403 학습내용
-animation Ex
+trans예제, animation학습, animation Ex
 
 ##240408 학습내용
 웹사이트 예제 
