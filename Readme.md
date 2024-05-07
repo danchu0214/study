@@ -1,3 +1,6 @@
+## 240507 학습내용
+class예제, prependTo,appendTo 학습과 예제, remove, empty
+
 ## 240503 학습내용
 attr, addClass,removeClass,toggleClass,alideUp,Dow
 

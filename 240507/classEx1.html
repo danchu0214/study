@@ -5,74 +5,104 @@
     <title>classEx1</title>
      <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
      <style>
-        body {
-            margin: 0 auto;
-        }
-        ul {
-            position: relative;
-            width: 80vw;
+        .tab-menu {
             list-style: none;
-            display: flex;
-            margin: 0 auto;
-            padding: 50px 0 0 0;
-            justify-content: center;
-        }
-        h2 {
-            text-align: center;
-            text-transform: uppercase;
-            background-color: #FFEBB2;
+            margin: 50px auto;
             padding: 0;
-            margin: 0;
-            border-radius: 25px 25px 0 0;
-            width: calc(80vw / 3);
+            position: relative;
+            padding-top: 50px;
+            width: 600px;
         }
-        p {
-            background-color: #B3C8CF;
+
+        /* 각 영역의 제목 */
+        .tab-menu .title {
+            text-transform: uppercase;
             margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            padding: 20px 30px;
+            background-color: #FBF3D5;
+            border-radius: 20px 20px 0 0;
+            padding: 10px;
+            text-align: center;
+            width: 199px; height: 50px;
+            box-sizing: border-box;
+            font-size: 20px;
+            cursor: pointer;
             position: absolute;
+            top: 0; left: 0;
         }
-        #tab-css p, #tab-js p {
+        .tab-menu #tab-css .title { left: 200px; }
+        .tab-menu #tab-js .title{ left: 400px; }
+        .tab-menu p {
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #FBF3D5;
+            padding: 20px;
             display: none;
         }
-
-
+        .tab-menu p strong {
+            display: block;
+            margin: 10px 0;
+        }
+        
+        .tab-menu li.active h2,
+        .tab-menu li.active p {
+            background-color: #D6DAC8;
+            display: block;
+        }
      </style>
 <script src="../assets/jquery-3.7.1.min.js"></script>
-<script>
-    $(function() {
-        $('#tab-html').on('click', () => {
-            $('')
-        })
-    })
-</script>
 </head>
 
 <body>
     <ul class="tab-menu">
         <li id="tab-html" class="active">
-            <h2 class="title">html5</h2>
+            <h2 class="title" role="button">html5</h2>
             <p>
                 <strong>html5 Tutorial</strong>
                 <span>불러봅니다 지나가는 있습니다 소원을 하늘에 청춘이 있습니다 한 마디의 지저귀는 한마디 쉬이 아직 합니다 까닭이요 청춘이 추억과 우는 벌레는 오는 시간의 다하지 북간도에 꽃들 속에서 아무 시간의 소원을 비둘기들 달의 합니다 삶 속의</span>
             </p>
         </li>
         <li id="tab-css">
-            <h2 class="title">css3</h2>
+            <h2 class="title" role="button">css3</h2>
             <p>
                 <strong>css3 Tutorial</strong>
                 <span>불러봅니다 지나가는 있습니다 소원을 하늘에 청춘이 있습니다 한 마디의 지저귀는 한마디 쉬이 아직 합니다 까닭이요 청춘이 추억과 우는 벌레는 오는 시간의 다하지 북간도에 꽃들 속에서 아무 시간의 소원을 비둘기들 달의 합니다 삶 속의</span>
             </p>
         </li>
         <li id="tab-js">
-            <h2 class="title">javascript</h2>
+            <h2 class="title" role="button">javascript</h2>
             <p>
                 <strong>javascript Tutorial</strong>
                 <span>불러봅니다 지나가는 있습니다 소원을 하늘에 청춘이 있습니다 한 마디의 지저귀는 한마디 쉬이 아직 합니다 까닭이요 청춘이 추억과 우는 벌레는 오는 시간의 다하지 북간도에 꽃들 속에서 아무 시간의 소원을 비둘기들 달의 합니다 삶 속의</span>
             </p>
         </li>
     </ul>
+
+    <script>
+        $(function() {
+            /*
+            $('.tab-menu li:first-child').on('click', () => {
+                $('.tab-menu li:first-child').addClass('active');
+                $('.tab-menu li:nth-child(2)').removeClass('active');
+                $('.tab-menu li:nth-child(3)').removeClass('active');
+            });
+            $('.tab-menu li').eq(1).on('click', () => {
+                $('.tab-menu li').removeClass('active');
+                $('.tab-menu li').eq(1).addClass('active');
+            });
+            $('.tab-menu li').eq(2).on('click', () => {
+                $('.tab-menu li').removeClass('active');
+                $('.tab-menu li').eq(2).addClass('active');
+            });
+            */
+
+            $('.tab-menu li').on('click', (e) => {
+                $('.tab-menu li').removeClass('active');
+                // e.target 내가 클릭한 바로 그 요소
+                // $(e.target).parent().addClass('active');
+                // e.currnetTarget 내가 클릭한 이벤트 리스너가 바인딩된 그 요소
+                $(e.currentTarget).addClass('active');
+            });
+        });
+    </script>
 </body>
 </html>

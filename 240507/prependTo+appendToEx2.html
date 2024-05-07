@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>prependTo+appendToEx2</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+     <style>
+        body {
+            margin: 0; padding: 0;
+        }
+        ul {
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+        }
+        .gallery {
+            width: 450px;
+            position: relative;
+        }
+        .gallery .btn-group {
+            background-color: #222;
+            color: #fff;
+            font-weight: bold;
+            font-size: 2rem;
+            width: 50px; height: 50px;
+            position: absolute;
+            top: calc(50% - 25px);
+        }
+        .gallery .btn-group li:last-child {
+            position: absolute;
+            right: 0;
+        }
+        .gallery .img-wrapper {
+            border: 2px solid #000;
+            width: 450px; height: 300px;
+            display: flex;
+            overflow: hidden;
+        }
+     </style>
+<script src="../assets/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <h1>prependTo+appendToEx2</h1>
+    <div class="gallery">
+        <ul class="btn-group">
+            <li>&lt;</li>
+            <li>&gt;</li>
+        </ul>
+        <ul class="img-wrapper">
+            <li><img src="https://placehold.co/450x300/FCF8E8/ECB390?text=img1" alt="img1"></li>
+            <li><img src="https://placehold.co/450x300/D4E2D4/FCF8E8?text=img2" alt="img2"></li>
+            <li><img src="https://placehold.co/450x300/ECB390/D4E2D4?text=img3" alt="img3"></li>
+            <li><img src="https://placehold.co/450x300/DF7861/FCF8E8?text=img4" alt="img4"></li>
+        </ul>
+    </div>
+</body>
+</html>
