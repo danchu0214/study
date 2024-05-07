@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>classEx1</title>
+     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+     <style>
+        body {
+            margin: 0 auto;
+        }
+        ul {
+            position: relative;
+            width: 80vw;
+            list-style: none;
+            display: flex;
+            margin: 0 auto;
+            padding: 50px 0 0 0;
+            justify-content: center;
+        }
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #FFEBB2;
+            padding: 0;
+            margin: 0;
+            border-radius: 25px 25px 0 0;
+            width: calc(80vw / 3);
+        }
+        p {
+            background-color: #B3C8CF;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 30px;
+            position: absolute;
+        }
+        #tab-css p, #tab-js p {
+            display: none;
+        }
+
+
+     </style>
+<script src="../assets/jquery-3.7.1.min.js"></script>
+<script>
+    $(function() {
+        $('#tab-html').on('click', () => {
+            $('')
+        })
+    })
+</script>
+</head>
+
+<body>
+    <ul class="tab-menu">
+        <li id="tab-html" class="active">
+            <h2 class="title">html5</h2>
+            <p>
+                <strong>html5 Tutorial</strong>
+                <span>불러봅니다 지나가는 있습니다 소원을 하늘에 청춘이 있습니다 한 마디의 지저귀는 한마디 쉬이 아직 합니다 까닭이요 청춘이 추억과 우는 벌레는 오는 시간의 다하지 북간도에 꽃들 속에서 아무 시간의 소원을 비둘기들 달의 합니다 삶 속의</span>
+            </p>
+        </li>
+        <li id="tab-css">
+            <h2 class="title">css3</h2>
+            <p>
+                <strong>css3 Tutorial</strong>
+                <span>불러봅니다 지나가는 있습니다 소원을 하늘에 청춘이 있습니다 한 마디의 지저귀는 한마디 쉬이 아직 합니다 까닭이요 청춘이 추억과 우는 벌레는 오는 시간의 다하지 북간도에 꽃들 속에서 아무 시간의 소원을 비둘기들 달의 합니다 삶 속의</span>
+            </p>
+        </li>
+        <li id="tab-js">
+            <h2 class="title">javascript</h2>
+            <p>
+                <strong>javascript Tutorial</strong>
+                <span>불러봅니다 지나가는 있습니다 소원을 하늘에 청춘이 있습니다 한 마디의 지저귀는 한마디 쉬이 아직 합니다 까닭이요 청춘이 추억과 우는 벌레는 오는 시간의 다하지 북간도에 꽃들 속에서 아무 시간의 소원을 비둘기들 달의 합니다 삶 속의</span>
+            </p>
+        </li>
+    </ul>
+</body>
+</html>
