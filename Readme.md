@@ -1,3 +1,9 @@
+## 240509 학습내용
+animate 예제, delay, slide 예제
+
+## 240508 학습내용
+animate 예제, prependTo,appendTo 예제
+
 ## 240507 학습내용
 class예제, prependTo,appendTo 학습과 예제, remove, empty
 
