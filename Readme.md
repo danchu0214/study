@@ -1,3 +1,6 @@
+## 240510 학습내용
+offset, scrollTo, scrollBy, sctollIntoView, 객체사이즈
+
 ## 240509 학습내용
 animate 예제, delay, slide 예제
 
