@@ -1,3 +1,9 @@
+## 240517 학습내용
+parallax예제
+
+## 240516 학습내용
+swiper예제, resize, vegas예제
+
 ## 240515 학습내용
 horizontalScrolling 학습, 마우스좌표, progressBar, 리퀘스트 애니메이션
 
