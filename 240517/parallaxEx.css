@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* 'Pretendard', sans-serif; */
-@import url(../assets/styles/pretendard-subset.css);
+@import url(../assets/style/pretendard-subset.css);
 /* 
   "Kanit", sans-serif; 400, 500, 700
   "Lobster", sans-serif; 400
@@ -67,6 +67,7 @@ header.colorChange .info {
   opacity: 1;
 }
 .side-menu li.active a .menu-label {
+  margin-right: 20px;
   opacity: 1;
   transform: scale(1.4);
   font-weight: 500;
